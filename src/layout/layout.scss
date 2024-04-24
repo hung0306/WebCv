@@ -1,0 +1,25 @@
+.header {
+    background-color: white;
+
+    &__logo {
+        color: green;
+        font-weight: 500;
+        font-size: 20px;
+
+    }
+}
+
+.logo {
+    color: green !important;
+}
+
+.content {
+    background-color: #E7FFF2;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
