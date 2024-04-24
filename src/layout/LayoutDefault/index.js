@@ -32,7 +32,7 @@ function LayoutDefault() {
                             <Row gutter={[20]}>
                                 {token ? (<>
                                     <Col >
-                                        <Link to="admin" ><Button>Quản lý </Button></Link>
+                                        <Link to="admin" ><Button type="primary">Quản lý </Button></Link>
                                     </Col>
                                     <Col >
                                         <Link to="/logout">
