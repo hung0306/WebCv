@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { Button, Card, Col, Form, Input, InputNumber, Row, Select, Spin, Tag, message } from 'antd';
+import { Button, Card, Col, Form, Input,  Row, Select, Spin, Tag, message } from 'antd';
 import { getDetailJob } from "../../services/jobService";
 import { getDetailCompany } from "../../services/companyService";
 import { getTimeCurrent } from "../../helpers/getTime";
@@ -133,9 +133,7 @@ function JobDetail() {
 
                                     <Col xxl={6} xl={6}>
                                         <Form.Item label="Số điện thoại" name="phone">
-                                            <InputNumber style={{
-                                                width: '100%',
-                                            }} />
+                                            <Input />
 
                                         </Form.Item>
 

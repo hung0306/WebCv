@@ -1,4 +1,4 @@
-import { Button, Card, Col, Form, Input, InputNumber, Row, message } from 'antd';
+import { Button, Card, Col, Form, Input,  Row, message } from 'antd';
 import { generateToken } from '../../helpers/generateToken';
 import * as company from "../../services/companyService";
 import { useNavigate } from "react-router-dom"
@@ -61,9 +61,7 @@ function Register() {
               </Form.Item>
 
               <Form.Item label="Số điện thoại" name="phone">
-                <InputNumber style={{
-                  width: '100%',
-                }} />
+                <Input />
               </Form.Item>
 
               <Form.Item label="Password" name="password" rules={[
