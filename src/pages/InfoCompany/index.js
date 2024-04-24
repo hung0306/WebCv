@@ -80,7 +80,7 @@ function InforCompany() {
                 <Spin spinning={xoay} tip="vui lòng chờ...">
                     <Card title="Thông tin công ty" extra={
                         !isEdit ? (
-                            <Button onClick={handleEdit}>Chỉnh sửa</Button>
+                            <Button type="primary" onClick={handleEdit}>Chỉnh sửa</Button>
                         ) : (
                             <Button onClick={handleCancle}>Hủy</Button>
                         )
