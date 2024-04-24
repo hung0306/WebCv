@@ -19,7 +19,7 @@ function Search() {
             if (response) {
                 const newData = response.filter((item) => {
                     const city = citySearch ? item.city?.includes(citySearch) : true;
-                    const keyword = keywordSearch ? item.tags?.includes(keywordSearch) : true;
+                    const keyword = keywordSearch ? item.tags.some(tag => tag.includes(keywordSearch)) : true;
                     const status = item.status;
                     return city && keyword && status;
                 });
