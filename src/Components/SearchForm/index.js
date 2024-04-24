@@ -62,7 +62,7 @@ function SearchForm() {
                             <Form.Item name="keyword"
 
                             >
-                                <Input placeholder='nhập từ khóa' />
+                                <Input placeholder='nhập ngôn ngữ cần tìm' />
 
                             </Form.Item>
                         </Col>
