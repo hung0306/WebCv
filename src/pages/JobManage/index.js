@@ -7,7 +7,7 @@ function JobManage() {
         <>
             <h1>Danh sách việc làm</h1>
             <Link to="/create-job">
-                <Button className="mb-20">
+                <Button type="primary" className="mb-20">
                     Tạo việc mới
                 </Button>
             </Link>
