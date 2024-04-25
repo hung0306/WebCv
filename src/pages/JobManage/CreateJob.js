@@ -1,4 +1,4 @@
-import { Button, Card, Col, Form, Input, Row, Select, Switch, message } from "antd";
+import { Button, Card, Col, Form, Input, InputNumber, Row, Select, Switch, message } from "antd";
 import { getCookie } from "../../helpers/cookies"
 import { useEffect, useState } from "react";
 import { getListTag } from "../../services/tagService";
@@ -73,7 +73,7 @@ function CreateJob() {
                                 rules={[
                                     {
                                         required: true,
-                                        message: 'vui lòng nhập tên phòng',
+                                        message: 'vui lòng nhập tên job',
                                     },
                                 ]}
                             >
@@ -115,11 +115,25 @@ function CreateJob() {
                                 rules={[
                                     {
                                         required: true,
-                                        message: 'vui lòng nhập lluong',
+                                        message: 'vui lòng nhập luong',
                                     },
                                 ]}
                             >
                                 <Input />
+                            </Form.Item>
+                        </Col>
+                        <Col xl={24}>
+                            <Form.Item
+                                label="Số lượng tuyển"
+                                name="quantityJob" // tự đặt để nó gửi lên object
+                                rules={[
+                                    {
+                                        required: true,
+                                        
+                                    },
+                                ]}
+                            >
+                                <InputNumber />
                             </Form.Item>
                         </Col>
 

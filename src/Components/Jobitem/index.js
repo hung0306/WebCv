@@ -32,6 +32,12 @@ function Jobitem(props) {
 
                         </div>
                         <div div className="mb-10">
+                            <span className="mr-10">Số lượng tuyển:</span>
+
+                            <strong >{item.quantityJob}</strong>
+
+                        </div>
+                        <div div className="mb-10">
                             <span className="mr-10">Công ty:</span>
 
                             <strong >{item?.infoCompany?.companyName}</strong>

@@ -94,6 +94,7 @@ function JobDetail() {
                         Lương: <strong>{job.salary}$</strong>
 
                     </div>
+                   
 
                     <div className="mt-10">
                         Địa chỉ: <strong>{job.infoCompany.address}</strong>
