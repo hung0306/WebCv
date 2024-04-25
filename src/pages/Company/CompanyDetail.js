@@ -36,7 +36,7 @@ function CompanyDetail() {
                     <h1  >{infoCompany.companyName}</h1>
                     <div className="mb-10 fs-20">Địa chỉ: <strong>{infoCompany.address}</strong></div>
 
-                    <div className="mb-10 fs-20">Số lượng cần tuyển: <strong>{infoCompany.quantityPeople}</strong></div>
+                    <div className="mb-10 fs-20">Số lượng nhân sự: <strong>{infoCompany.quantityPeople}</strong></div>
 
                     <div className="mb-10 fs-20">Thời gian làm việc:<strong>{infoCompany.workingTime}</strong></div>
 
