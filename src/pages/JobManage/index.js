@@ -5,7 +5,7 @@ import JobList from "./JobList"
 function JobManage() {
     return (
         <>
-            <h1>Danh sách việc làm</h1>
+            <h1>Danh sách việc làm đang tuyển</h1>
             <Link to="/create-job">
                 <Button type="primary" className="mb-20">
                     Tạo việc mới
