@@ -37,7 +37,8 @@ function CvStatistic() {
         <>
             {data && (
                 <>
-                    <h3>Cv</h3>
+                    <h3>Số lượng cv ứng tuyển</h3>
+                    
                     <p>Số lượng CV :<strong>{data.total}</strong></p>
                     <p>CV chưa đọc :<strong>{data.statusFalse}</strong></p>
                     <p>CV đã đọc :<strong>{data.statusTrue}</strong></p>

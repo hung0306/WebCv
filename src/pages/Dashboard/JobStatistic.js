@@ -28,7 +28,7 @@ function JobStatistic() {
         <>
             {data && (
                 <>
-                    <h3>Job</h3>
+                    <h3>Danh sách job đang tuyển</h3>
                     <p>Số lượng job :<strong>{data.total}</strong></p>
                     <p>Job đang bật :<strong>{data.statusTrue}</strong></p>
                     <p>Job đang tắt :<strong>{data.statusFalse}</strong></p>

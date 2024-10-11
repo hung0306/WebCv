@@ -1,5 +1,6 @@
 import { Card, Tag } from "antd"
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import "./Jobitem.scss"
 
 
 function Jobitem(props) {
@@ -10,7 +11,7 @@ function Jobitem(props) {
         <>
             {item.status && (
                 <Link to={`/job/${item.id}`}>
-                    <Card title={item.name}>
+                    <Card className="jobitem" title={item.name}>
                         <div className="mb-10" >
                             <span className="mr-10">Ngôn ngữ:</span>
                             {item.tags.map((item, index) => (
