@@ -5,6 +5,7 @@ import { getListJob } from "../../services/jobService";
 import { Col, Row } from "antd";
 import Jobitem from "../../Components/Jobitem";
 import Goback from "../../Components/Goback";
+import "./CompanyDetail.scss"
 
 function CompanyDetail() {
     const params = useParams();
@@ -30,35 +31,35 @@ function CompanyDetail() {
     console.log(infoCompany);
     return (
         <>
-            <Goback />
-            {infoCompany && (
-                <>
-                    <h1  >{infoCompany.companyName}</h1>
-                    <div className="mb-10 fs-20">Địa chỉ: <strong>{infoCompany.address}</strong></div>
+            <div className="company-detail">
+                <Goback />
+                {infoCompany && (
+                    <>
+                        <h1>{infoCompany.companyName}</h1>
+                        <div className="company-detail__info">
+                            <div className="info-item mb-10 fs-20">Địa chỉ: <strong>{infoCompany.address}</strong></div>
+                            <div className="info-item mb-10 fs-20">Số lượng nhân sự: <strong>{infoCompany.quantityPeople}</strong></div>
+                            <div className="info-item mb-10 fs-20">Thời gian làm việc: <strong>{infoCompany.workingTime}</strong></div>
+                            <div className="info-item mb-10 fs-20">Link website: <strong>{infoCompany.website}</strong></div>
+                            <div className="info-item mb-10 fs-20">Mô tả ngắn: <strong>{infoCompany.description}</strong></div>
+                            <div className="info-item mb-10 fs-20">Mô tả chi tiết: <strong>{infoCompany.detail}</strong></div>
+                        </div>
 
-                    <div className="mb-10 fs-20">Số lượng nhân sự: <strong>{infoCompany.quantityPeople}</strong></div>
-
-                    <div className="mb-10 fs-20">Thời gian làm việc:<strong>{infoCompany.workingTime}</strong></div>
-
-                    <div className="mb-10 fs-20">Link website: <strong>{infoCompany.website}</strong></div>
-
-                    <div className="mb-10 fs-20">Mô tả ngắn: <strong>{infoCompany.description}</strong> </div>
-
-                    <div className="mb-10 fs-20">Mô tả chi tiết: <strong>{infoCompany.detail}</strong></div>
-
-                    <strong className="fs-20">Danh sách các job:</strong>
-                    <div>
-                        <Row gutter={[20,20]} className="mt-20">
-                            {(jobs.map(item => (
-                                <Col span={8} key={item.id}>
-                                    <Jobitem item={item} />
-                                </Col>
-                            )))}
-                        </Row>
-                    </div>
-                </>
-
-            )}
+                        <div className="company-detail__jobs">
+                            <strong className="job-title">Danh sách các job:</strong>
+                            <div className="job-list mt-20">
+                                <Row gutter={[20, 20]}>
+                                    {jobs.map(item => (
+                                        <Col span={8} key={item.id} className="job-item">
+                                            <Jobitem item={item} />
+                                        </Col>
+                                    ))}
+                                </Row>
+                            </div>
+                        </div>
+                    </>
+                )}
+            </div>
         </>
     )
 }

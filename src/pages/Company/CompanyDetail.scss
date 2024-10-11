@@ -1,0 +1,68 @@
+.company-detail {
+    padding: 20px;  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    background-color: #f9f9f9;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;  
+        font-weight: bold;
+    }
+
+    .company-detail__info {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #ffffff;  
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .info-item {
+            margin-bottom: 15px;  
+            font-size: 18px;
+            color: #333;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .company-detail__jobs {
+        margin-top: 40px;
+
+        .job-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .job-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;  
+        }
+
+        .job-item {
+            flex: 1 1 calc(33.333% - 20px);  
+            max-width: 100%;
+            min-width: 280px;
+        }
+    }
+
+  
+    .mb-10 {
+        margin-bottom: 10px;
+    }
+
+    .fs-20 {
+        font-size: 20px;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+}

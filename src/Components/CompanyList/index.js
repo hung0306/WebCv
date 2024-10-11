@@ -29,7 +29,7 @@ function CompanyList() {
                     {data.map(item => (
                         <Col span={6} key={item.id}>
                             <Link to={`/company/${item.id}`}>
-                                <Card>
+                                <Card className="listcompany__card">
                                     <div className="listcompany__company">Công ty: <strong>{item.companyName}</strong></div>
                                     <div>Số nhân sự: <strong>{item.quantityPeople}</strong></div>
                                     <div>Địa chỉ: <strong>{item.address}</strong> </div>
